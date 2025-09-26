@@ -8,7 +8,7 @@ export const Widgets = () => {
 		<>
 			<Location/>
 			<Cursor/>
-			<Search/>
+			{/*<Search/>*/}
 		</>
 	)
 }
