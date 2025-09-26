@@ -1,0 +1,18 @@
+@import 'global';
+
+.chat-interface {
+  border: $border;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: $box-shadow;
+}
+.chat-header {
+  background-color: $primary;
+  color: $text-light;
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}

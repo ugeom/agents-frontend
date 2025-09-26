@@ -1,0 +1,9 @@
+@import 'global';
+
+.agent-card {
+  border: 1px solid $border-color;
+  border-radius: 8px;
+  box-shadow: $box-shadow;
+  font-family: 'Arial', sans-serif;
+  background: $card-bg;
+}

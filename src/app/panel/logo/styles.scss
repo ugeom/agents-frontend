@@ -1,0 +1,19 @@
+@import 'global';
+
+.logo-wrapper {
+  cursor: pointer;
+  background: $panel-bg;
+  padding: 10px;
+  padding-top: 20px;
+  padding-right: 15px;
+}
+.logo-img {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .logo-img {
+    width: auto;
+    height: 40px;
+  }
+}

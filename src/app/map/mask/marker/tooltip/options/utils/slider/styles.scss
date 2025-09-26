@@ -1,0 +1,18 @@
+@import 'global';
+
+.slider-wrapper {
+  display: grid;
+  min-width: 200px; 
+  grid-template-rows: 40px min-content;
+}
+.slider-background {
+  fill: $border-color;
+}
+.slider-foreground {
+  fill: $primary;
+}
+.slider-handler {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  fill: $primary
+}

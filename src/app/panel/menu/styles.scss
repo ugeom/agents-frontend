@@ -1,0 +1,19 @@
+@import 'global';
+
+.menu {
+  display: grid; 
+  align-content: start;
+  background: $panel-bg;
+  color: $text-light;
+  white-space: nowrap;
+  padding: 10px;
+  padding-top: 20px;
+  overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  .menu {
+    display: flex; 
+    justify-content: space-between;
+    padding: 0;
+  }
+}

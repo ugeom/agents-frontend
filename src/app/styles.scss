@@ -4,13 +4,40 @@ body {
   margin: 0;
   font-family: $font-family;
   color: $text-dark;
+  line-height: 1.6;
+  overflow: hidden;
 }
-.world-wrapper {
-	margin: 0;
-	padding: 0;
-	position: relative;
-	display: grid;
-	overflow: hidden;
-	height: 100vh;
-	max-height: calc(var(--vh, 1vh) * 100);
+.main-wrapper {
+  display: grid;
+  overflow: hidden;
+  height: calc(var(--vh, 1vh) * 100);
+  max-height: calc(var(--vh, 1vh) * 100);
+}
+.logo {
+  grid-area: lg;
+}
+.nav-wrapper {
+  grid-area: nw
+}
+.canvas {
+  grid-area: cv;
+  position: relative;
+}
+.main-wrapper {
+  display: grid; 
+  grid-template-columns: min-content auto;
+  grid-template-rows: min-content auto;
+  grid-template-areas: 
+    "lg cv"
+    "nw cv"
+}
+@media screen and (max-width: 768px) {
+  .main-wrapper {
+    grid-template-columns: auto;
+    grid-template-rows: min-content auto min-content;
+    grid-template-areas: 
+      "lg"
+      "cv"
+      "nw";
+  } 
 }

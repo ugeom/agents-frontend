@@ -1,0 +1,15 @@
+@import 'global';
+
+.search-icon-wrapper {
+  background-color: $primary;
+  border-radius: 5px;
+  display: grid;
+  align-items: center;
+  img {
+    padding: 9px;
+  }
+}
+.search-icon {
+  width: 20px;
+  cursor: pointer;
+}

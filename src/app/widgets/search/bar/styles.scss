@@ -1,0 +1,19 @@
+.search-input {
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  padding-left: 10px;
+  padding-right: 5px;
+  width: 300px;
+}
+.search-input::placeholder {
+  opacity: 0.6;
+}
+.search-input:focus {
+  outline: none;
+}
+@media screen and (max-width: 768px) {
+  .search-input {
+    width: 100%;
+  }
+}

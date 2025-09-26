@@ -1,0 +1,15 @@
+@import 'global';
+
+.cross-wrapper {
+	position: absolute; 
+	right: -12px; 
+	top: -15px; 
+	cursor: pointer;
+}
+.cross-background {
+	fill: rgba(255, 255, 255, 1);
+}
+.cross-line {
+	stroke: $primary;
+	stroke-width: 2;
+}

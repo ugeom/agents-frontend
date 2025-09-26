@@ -1,0 +1,24 @@
+@import 'global';
+
+.search-wrapper {
+  position: absolute;
+  right: 50%;
+  top: 10px;
+  transform: translateX(50%);
+  padding: 5px;
+  display: flex;
+  gap: 5px;
+  box-shadow: $box-shadow; 
+  background-color: $light-bg;
+  border-radius: 10px;
+  z-index: 3;
+}
+// mobile-style
+@media screen and (max-width: 768px) {
+  .search-wrapper {
+    top: 65px;
+    right: 15px;
+    transform: none;
+    width: calc(100% - 40px);
+  }
+}

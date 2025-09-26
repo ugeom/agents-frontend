@@ -1,0 +1,27 @@
+@import 'global';
+
+.routing-profile {
+  display: flex; 
+  justify-content: space-around;
+  gap: 10px;
+  padding: 10px;
+}
+.routing-image-wrapper {
+  border-radius: 5px;
+  width: 50px;
+  display: grid;
+  justify-items: center;
+  background-color: $grid-bg;
+  border: 1px solid $border-color;
+  padding: 5px;
+  cursor: pointer;
+  img {
+    height: 20px;    
+  }
+}
+.routing-image-wrapper:hover {
+  background-color: $primary;
+}
+.routing-image-wrapper.active {
+  background-color: $primary;
+}

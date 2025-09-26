@@ -1,0 +1,22 @@
+@import 'global';
+
+.card-header {
+  display: grid;
+  grid-template-columns: min-content auto;
+  align-items: center;
+  white-space: nowrap;
+  padding: 10px 15px;
+  border-bottom: 1px solid #e0e0e0;
+  grid-gap: 10px;
+}
+.agent-icon {
+  width: 40px;
+}
+.agent-title {
+  font-size: 16px;
+  font-weight: bold;
+}
+.header-buttons {
+  display: flex; 
+  cursor: pointer;
+}

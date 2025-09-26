@@ -1,0 +1,25 @@
+@import 'global';
+
+.menu-item {
+  padding: 15px;
+  margin: 5px 0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+.menu-item:hover {
+  background-color: $primary;
+  color: $panel-bg;
+}
+.menu-item.active {
+  background-color: $primary;
+  color: $panel-bg;
+}
+@media screen and (max-width: 768px) {
+  .section-text {
+    display: none;
+  }
+}

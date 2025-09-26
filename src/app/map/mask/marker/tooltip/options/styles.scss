@@ -1,0 +1,21 @@
+@import 'global';
+
+.options-wrapper {
+	background-color: $card-bg;
+	box-shadow: $box-shadow;
+	padding: 10px;
+	border-radius: 4px;
+	display: grid;
+	grid-gap: 10px;
+}
+.color-circle {
+	stroke: $border-color;
+	cursor: pointer;
+}
+.options-title {
+  display: flex; 
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 16px;
+}

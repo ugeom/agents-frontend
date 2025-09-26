@@ -1,0 +1,17 @@
+@import 'global';
+
+.marker-provider{
+  background-color: $card-bg; 
+  padding: 5px; 
+  padding-top: 2px; 
+  padding-bottom: 2px; 
+  border-radius: 3px; 
+  width: min-content;
+  text-transform: capitalize;
+  color: $text-dark;
+  box-shadow: $box-shadow;
+  font-size: 16px;
+}
+.agent-avatar {
+  width: 40px;
+}

@@ -1,0 +1,38 @@
+@import 'global';
+
+.chat-input-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+  border-top: 1px solid $border-color;
+}
+.chat-input {
+  flex: 1;
+  height: 40px;
+  border: 1px solid $border-color;
+  border-radius: 4px;
+  padding: 8px;
+  resize: none;
+  font-size: 16px;
+  color: $text-dark;
+}
+.chat-input:focus {
+  outline: 1px solid $text-dark;
+}
+.chat-input::-webkit-scrollbar {
+  width: 0;
+}
+.chat-send-button {
+  margin-left: 10px;
+  padding: 8px 12px;
+  background-color: $primary;
+  color: $text-light;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.chat-send-button:hover {
+  background-color: #0056b3;
+}

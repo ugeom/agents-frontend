@@ -1,28 +1,16 @@
 import { GeoProvider } from './geo';
-import { AgentApiProvider } from './agent';
-import { LLMProvider } from './llm';
-import { ChatProvider } from './chat';
-import { ThreeLayerProvider } from './three';
-import { HeartsProvider } from './hearts';
-import { WeatherProvider } from './weather';
+import { ApiProvider } from './api';
+import { EventsProvider } from './events';
 
 export const ContextProvider = ({children}: any) => {
   return (
-    <HeartsProvider>
     <GeoProvider>
-    <AgentApiProvider>
-    <WeatherProvider>
-    <ThreeLayerProvider>
-    <LLMProvider>
-    <ChatProvider>
+    <ApiProvider>
+    <EventsProvider>
       {children}
-    </ChatProvider>
-    </LLMProvider>
-    </ThreeLayerProvider>
-    </WeatherProvider>
-    </AgentApiProvider>
+    </EventsProvider>
+    </ApiProvider>
     </GeoProvider>
-    </HeartsProvider>
   )
 }
 

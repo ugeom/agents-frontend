@@ -1,0 +1,8 @@
+.custom-cursor {
+    width: 45px;
+    height: 45px;
+    position: fixed;
+    transform: translateY(-15px);
+    pointer-events: none;
+    z-index: 6;
+}
