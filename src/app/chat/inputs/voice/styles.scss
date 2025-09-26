@@ -1,0 +1,91 @@
+.mic-button {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  margin-top: -16px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover:not(:disabled) {
+    color: rgba(255, 255, 255, 1);
+    transform: scale(1.1);
+  }
+  &.listening {
+    color: white;
+    background: rgba(79, 70, 229, 0.4);
+    box-shadow: 0 0 0 1px rgba(79, 70, 229, 0.6);
+    animation: whatsapp-pulse 1s ease-in-out infinite;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: -4px;
+      left: -4px;
+      right: -4px;
+      bottom: -4px;
+      border: 2px solid rgba(79, 70, 229, 0.8);
+      border-radius: 50%;
+      animation: whatsapp-ripple 1.5s ease-out infinite;
+    }
+  }
+  
+  &.processing {
+    color: rgba(255, 255, 255, 0.5);
+    animation: whatsapp-processing 1.5s ease-in-out infinite;
+  }
+  
+  &:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  // Mobile responsive styles
+  @media (max-width: 768px) {
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+// WhatsApp-style animations
+@keyframes whatsapp-pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes whatsapp-ripple {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
+@keyframes whatsapp-processing {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}

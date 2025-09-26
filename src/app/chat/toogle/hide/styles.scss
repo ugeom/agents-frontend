@@ -1,0 +1,26 @@
+.hide-messages-button {
+  position: absolute;
+  right: 12px;
+  top: 24px;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(79, 70, 229, 0.1);
+  color: #4f46e5;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  &:hover {
+    background: rgba(79, 70, 229, 0.2);
+    transform: translateY(-50%) scale(1.05);
+  }
+  &:active {
+    transform: translateY(-50%) scale(0.95);
+  }
+}

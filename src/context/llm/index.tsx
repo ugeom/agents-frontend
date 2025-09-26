@@ -1,16 +1,19 @@
 import { ThreeProvider } from './three';
 import { TurfProvider } from './turf';
-import { OvertureProvider } from './overture';
+import { RoadsProvider } from './roads';
+import { MapStyleProvider } from './mapstyle';
 
 export const LLMProvider = ({ children }: any) => {
 	return (
-		<OvertureProvider>
+		<RoadsProvider>
 		<TurfProvider>
+		<MapStyleProvider>
 		<ThreeProvider>
 			{children}
 		</ThreeProvider>
+		</MapStyleProvider>
 		</TurfProvider>
-		</OvertureProvider>
+		</RoadsProvider>
 	)
 }
 

@@ -11,20 +11,9 @@ export const useGeo = () => useContext(GeoContext)
 export const GeoProvider = ({children}: any) => {
 	const mapRef = useRef<any>(null);
 	const [ viewport, setViewport ] = useState(Locations.sp);
-	const [ mapStyle, setMapStyle ] = useState("mapbox://styles/hvoking/cmbzyje2c000f01s15h8fer9p");
+	const [ mapStyle, setMapStyle ] = useState<string>("mapbox://styles/mapbox/dark-v11");
 	const { latitude, longitude } = viewport;
 
-	const bounds = mapRef?.current?.getMap().getBounds();
-
-	const bbox = [ 
-		bounds?.getWest(), 
-		bounds?.getSouth(), 
-		bounds?.getEast(), 
-		bounds?.getNorth() 
-	];
-
-	const mapCenter = { longitude, latitude };
-	const metaData = { bbox, mapCenter };
 
 	useEffect(() => {
 		const viewportFlyTo = () => {
@@ -39,9 +28,9 @@ export const GeoProvider = ({children}: any) => {
 
 	return (
 		<GeoContext.Provider value={{
-			mapRef, Locations, 
-			viewport, setViewport, 
-			mapStyle, metaData,
+			mapRef, Locations,
+			viewport, setViewport,
+			mapStyle
 		}}>
 			{children}
 		</GeoContext.Provider>

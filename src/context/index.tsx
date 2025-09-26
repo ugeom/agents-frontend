@@ -2,21 +2,27 @@ import { GeoProvider } from './geo';
 import { AgentApiProvider } from './agent';
 import { LLMProvider } from './llm';
 import { ChatProvider } from './chat';
-import { ThreejsLayerProvider } from './threejs';
+import { ThreeLayerProvider } from './three';
+import { HeartsProvider } from './hearts';
+import { WeatherProvider } from './weather';
 
 export const ContextProvider = ({children}: any) => {
   return (
+    <HeartsProvider>
     <GeoProvider>
     <AgentApiProvider>
-    <ThreejsLayerProvider>
+    <WeatherProvider>
+    <ThreeLayerProvider>
     <LLMProvider>
     <ChatProvider>
       {children}
     </ChatProvider>
     </LLMProvider>
-    </ThreejsLayerProvider>
+    </ThreeLayerProvider>
+    </WeatherProvider>
     </AgentApiProvider>
     </GeoProvider>
+    </HeartsProvider>
   )
 }
 

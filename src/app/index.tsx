@@ -1,4 +1,5 @@
 // App imports
+import { Logo } from './logo';
 import { Chat } from './chat';
 import { Maps } from './maps';
 import './styles.scss';
@@ -9,9 +10,10 @@ import { ContextProvider } from 'context';
 export const App = () => {
   return (
     <ContextProvider>
-      <div className="world-wrapper"> 
-          <Chat/>
-          <Maps/>
+      <Logo/>
+      <div className="world-wrapper">
+        <Maps/>
+        <Chat/>
       </div>
     </ContextProvider>
   );

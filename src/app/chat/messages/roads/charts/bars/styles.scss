@@ -1,0 +1,13 @@
+.bars-wrapper {
+	 display: grid; 
+	 grid-template-rows: 1fr 1fr 1fr;
+	 grid-gap: 10px; 
+	 font-size: 0.9em;
+	 align-content: start;
+	 letter-spacing: 0.6px;
+	 overflow: hidden;
+}
+.bars {
+	display: grid; 
+	grid-template-rows: min-content 10px; 
+}

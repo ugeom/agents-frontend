@@ -1,0 +1,36 @@
+.heart-svg {
+  transition: all 0.3s ease;
+  .heart-outline {
+    stroke: rgba(255, 255, 255, 1);
+    stroke-width: 1;
+    fill: none;
+  }
+  .heart-fill {
+    fill: #DC143C;
+  }
+  &.full {
+    transform: scale(1);
+    animation: heartbeat 2.5s infinite;
+    filter: drop-shadow(0 0 4px rgba(220, 20, 60, 0.6));
+  }
+  &.three-quarter,
+  &.half,
+  &.quarter {
+    transform: scale(0.98);
+  }
+  &.empty {
+    transform: scale(0.9);
+    opacity: 0.7;
+    .heart-fill {
+      fill: none;
+    }
+  }
+}
+@keyframes heartbeat {
+  0%, 50%, 100% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.05);
+  }
+}

@@ -1,34 +1,59 @@
+// React imports
+import { useState } from 'react';
+
+// App imports
+import { Toogle } from './toogle';
+import { Messages } from './messages';
+import { Inputs } from './inputs';
+import { Files } from './files';
+import './styles.scss';
+
 // Context imports
 import { useChat } from 'context/chat';
 
-// App imports
-import { History } from './history';
-import './styles.scss';
-
 export const Chat = () => {
-	const { responseData, searchText, handleChange, handleKeyDown, onClick } = useChat();
+	const { responseData, setResponseData } = useChat();
+
+	const [ chatMode, setChatMode ] = useState<'normal' | 'input-only'>('normal');
+	const [ triggerAgent, setTriggerAgent ] = useState<string | null>(null);
+
+	const updateResponse = (sender: any, message: any) => {
+		setResponseData((prev: any) => [...prev, { sender, message }])
+	}
+
+	const handleImageSelect = (imageUrl: string, imageIndex: number) => {
+		const images = [ imageUrl ];
+		const text = `Selected Image`;
+		updateResponse("user", { text , images });
+
+		const selectionMessage = `I select image ${imageIndex + 1}: ${imageUrl}`;
+		setTriggerAgent(selectionMessage); // This will be passed to Inputs
+	}
 
 	return (
-		<div className="chat-interface">
+		<div className={`chat-wrapper ${chatMode}`}>
+			<Toogle 
+				responseData={responseData} 
+				setResponseData={setResponseData} 
+				chatMode={chatMode} 
+				setChatMode={setChatMode}
+			/>
 			<div className="chat-header">
-				Ask Anything
 			</div>
-			<History responseData={responseData}/>
-			<div className="chat-input-container">
-				<textarea
-					className="chat-input"
-					placeholder="Type your message here..."
-					spellCheck={false}
-					value={searchText}
-					onChange={handleChange}
-					onKeyDown={handleKeyDown}
+			{chatMode !== 'input-only' && 
+				<Messages 
+					responseData={responseData}
+					updateResponse={updateResponse}
+					onImageSelect={handleImageSelect}
 				/>
-				<button 
-					className="chat-send-button" 
-					onClick={onClick}
-				>
-					Send
-				</button>
+			}
+			<div className="input-container">
+				<Files/>
+				<Inputs 
+					updateResponse={updateResponse}
+					triggerAgent={triggerAgent}
+					setTriggerAgent={setTriggerAgent}
+				/>
 			</div>
 		</div>
 	)

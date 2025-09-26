@@ -1,32 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 285.7 87.2">
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1505.31 379.41">
   <defs>
     <style>
       .cls-1 {
-        stroke-linecap: round;
-        stroke-width: 6px;
+        fill: url(#linear-gradient-2);
       }
 
-      .cls-1, .cls-2 {
-        fill: none;
-        stroke: #fff;
-        stroke-miterlimit: 10;
+      .cls-2, .cls-3 {
+        fill: #fff;
       }
 
-      .cls-2 {
-        stroke-width: 2px;
+      .cls-4 {
+        mask: url(#mask);
+      }
+
+      .cls-5, .cls-3 {
+        isolation: isolate;
+      }
+
+      .cls-3 {
+        font-family: Montserrat-Thin, Montserrat;
+        font-size: 149.53px;
+        font-variation-settings: 'wght' 100;
+        font-weight: 200;
+        letter-spacing: .26em;
+      }
+
+      .cls-6 {
+        fill: url(#linear-gradient);
       }
     </style>
+    <mask id="mask" x="-90" y="-90" width="500" height="500" maskUnits="userSpaceOnUse">
+      <g id="holeMask">
+        <rect class="cls-2" x="-90" y="-90" width="500" height="500"/>
+        <rect x="97.5" y="101.04" width="125" height="125" rx="25" ry="25" transform="translate(-68.77 161.04) rotate(-45)"/>
+      </g>
+    </mask>
+    <linearGradient id="linear-gradient" x1="71.53" y1="65.13" x2="249.79" y2="256.29" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#78f"/>
+      <stop offset="0" stop-color="#7a86ff"/>
+      <stop offset=".31" stop-color="#509cff"/>
+      <stop offset=".78" stop-color="#17bbff"/>
+      <stop offset="1" stop-color="#01c8ff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="388.47" y1="84.76" x2="1496.93" y2="84.76" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#78f"/>
+      <stop offset="0" stop-color="#7a86ff"/>
+      <stop offset=".2" stop-color="#6690ff"/>
+      <stop offset=".61" stop-color="#35abff"/>
+      <stop offset="1" stop-color="#01c8ff"/>
+    </linearGradient>
   </defs>
-  <g id="Layer_2-2" data-name="Layer 2-2">
-    <circle class="cls-2" cx="73.9" cy="24.8" r="3.7"/>
-    <path class="cls-1" d="M141.4,3.3c-7.1,0-10.4-.3-17.4-.3-11.4,0-20.7,9.3-20.7,20.7s9.3,20.7,20.7,20.7,10.4.3,17.4.3"/>
-    <circle class="cls-1" cx="169.3" cy="24.6" r="20.6"/>
-    <path class="cls-1" d="M240.2,45.6v-21.1c0-11.4-9.2-20.6-20.6-20.6s-20.6,9.2-20.6,20.6v21.1"/>
-    <path class="cls-1" d="M281.4,45.6v-21.1c0-11.4-9.2-20.6-20.6-20.6s-20.6,9.2-20.6,20.6v21.1"/>
-    <circle class="cls-1" cx="73.8" cy="23.6" r="20.6"/>
-    <path class="cls-1" d="M72.4,44.3h-.9c-9.6,0-17.3,7.8-17.3,17.3s7.8,17.3,17.3,17.3h35.5"/>
-    <path class="cls-1" d="M3,3.5v21c0,11.3,9.2,20.5,20.5,20.5s20.5-9.2,20.5-20.5V3.5"/>
-    <line class="cls-1" x1="123.7" y1="24.3" x2="133.8" y2="24.3"/>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g class="cls-4">
+      <path class="cls-6" d="M160,0c15,0,30,10,40,20l100,100c10,10,20,25,20,40s-10,30-20,40l-100,100-40.3,40.3c-2.55,2.55-6.71,2.42-9.11-.27l-35.59-40.04L20,200C10,190,0,175,0,160s10-30,20-40L120,20C130,10,145,0,160,0Z"/>
+    </g>
+    <g id="Layer_1-2" data-name="Layer 1-2">
+      <path class="cls-1" d="M458.36,168.33c-21.72,0-38.8-6.22-51.23-18.65-12.43-12.43-18.65-30.61-18.65-54.54V1.18h23.61v93.02c0,18.42,4.05,31.87,12.16,40.37,8.11,8.5,19.56,12.75,34.35,12.75s26.48-4.25,34.59-12.75c8.11-8.5,12.16-21.96,12.16-40.37V1.18h22.9v93.97c0,23.92-6.18,42.1-18.53,54.54-12.36,12.43-29.47,18.65-51.35,18.65ZM640.38,166.45V1.18h64.45c14.48,0,26.84,2.28,37.07,6.85,10.23,4.56,18.1,11.18,23.61,19.83,5.51,8.66,8.26,18.97,8.26,30.93s-2.75,22.23-8.26,30.81c-5.51,8.58-13.38,15.15-23.61,19.71s-22.59,6.85-37.07,6.85h-51.47l10.62-10.86v61.15h-23.61ZM663.99,107.66l-10.62-11.57h50.76c15.11,0,26.56-3.27,34.35-9.8,7.79-6.53,11.69-15.7,11.69-27.51s-3.9-20.93-11.69-27.39c-7.79-6.45-19.24-9.68-34.35-9.68h-50.76l10.62-11.8v97.74ZM750.88,166.45l-42.02-59.97h25.26l42.5,59.97h-25.73ZM875.77,166.45V1.18h74.13c19.04,0,33.68,3.82,43.91,11.45,10.23,7.63,15.35,18.06,15.35,31.28,0,8.97-2.01,16.53-6.02,22.67-4.01,6.14-9.4,10.86-16.17,14.17-6.77,3.31-14.09,4.96-21.96,4.96l4.25-7.08c9.44,0,17.79,1.65,25.03,4.96,7.24,3.31,12.99,8.15,17.23,14.52,4.25,6.37,6.37,14.28,6.37,23.73,0,14.17-5.31,25.14-15.94,32.94-10.62,7.79-26.4,11.69-47.34,11.69h-78.86ZM899.38,147.32h54.3c13.06,0,23.06-2.2,29.98-6.61,6.93-4.41,10.39-11.33,10.39-20.78s-3.46-16.61-10.39-21.01c-6.93-4.41-16.92-6.61-29.98-6.61h-56.43v-19.12h50.52c11.96,0,21.25-2.2,27.86-6.61,6.61-4.41,9.92-11.02,9.92-19.83s-3.31-15.42-9.92-19.83c-6.61-4.41-15.9-6.61-27.86-6.61h-48.4v127.02ZM1093.21,166.45L1168.05,1.18h23.37l75.08,165.27h-24.79l-66.81-152.04h9.44l-66.81,152.04h-24.32ZM1125.09,125.13l6.37-18.89h93.02l6.85,18.89h-106.24,0ZM1354.81,166.45V1.18h19.36l109.31,135.75h-10.15V1.18h23.61v165.27h-19.36l-109.31-135.75h10.15v135.75h-23.61Z"/>
+      <g class="cls-5">
+        <text class="cls-3" transform="translate(370.57 340.68)"><tspan x="0" y="0">GEOMETRY</tspan></text>
+      </g>
+    </g>
   </g>
 </svg>

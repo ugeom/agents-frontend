@@ -10,7 +10,6 @@
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
     "@types/three": "^0.178.1",
-    "@types/wellknown": "^0.5.8",
     "cannon-es": "^0.20.0",
     "d3": "^7.9.0",
     "mapbox-gl": "^3.13.0",
@@ -19,10 +18,10 @@
     "react-map-gl": "^8.0.4",
     "react-scripts": "^5.0.1",
     "sass": "^1.89.2",
-    "satellite.js": "^6.0.1",
     "three": "^0.178.0",
+    "threebox-plugin": "^2.2.7",
     "typescript": "^5.8.3",
-    "wellknown": "^0.5.0"
+    "weatherlayers-gl": "^2025.8.0"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,0 +1,19 @@
+.glb-thumbnail {
+  width: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  
+  canvas {
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 4px;
+    display: block;
+  }
+  
+  &:hover {
+    transform: scale(1.02);
+    transition: transform 0.2s ease;
+  }
+}
